@@ -1,0 +1,11 @@
+* Overview
+
+The function =insert-buffer-unique-id= inserts a random string, for example =x195a=. The starting string (=x= by default), the number of characters that follow (4 by default) and the string they are picked from can be customized.
+
+The unique id is generated randomly, retrying if it is already present in the buffer. This is not a sophisticated algorithm and may fail or be inefficient in corner cases, but should suffice for the most common use case.
+
+I wrote this when I was dealing with an R file which had many small statistical models, which I had to keep track of, and naming them was becoming tiresome.
+
+* Bugs
+
+Please report them using the [[https://github.com/tpapp/buffer-unique-id/issues][issue tracker on Github]].
